@@ -56,12 +56,11 @@ struct ContentPathBuilder {
 
 private extension String {
     func removingFrontMatter() -> String {
-        guard let range = range(of: "---", options: [], range: startIndex..<endIndex),
-              let closing = range(of: "---", options: [], range: range.upperBound..<endIndex) else {
+        guard let startRange = range(of: "---", options: [], range: startIndex..<endIndex),
+              let trailingRange = range(of: "---", options: [], range: startRange.upperBound..<endIndex) else {
             return self
         }
-        let remainder = self[closing.upperBound...]
-        return String(remainder)
+        return String(self[trailingRange.upperBound...])
     }
 
     func removingMarkdownArtifacts() -> String {

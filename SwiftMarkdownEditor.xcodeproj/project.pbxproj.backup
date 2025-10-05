@@ -50,19 +50,19 @@
 			sourceTree = <group>;
 		};
 		B21D5531E277421F83981F6E = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "View+PlatformModifiers.swift";
 			sourceTree = <group>;
 		};
 		1626292E442E4DC9BD0CE1EB = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "MarkdownRenderer.swift";
 			sourceTree = <group>;
 		};
 		19C3BD2F059D42158DFA3E31 = {
-			isa = XCBuildConfiguration;
+			isa = "XCBuildConfiguration";
 			buildSettings = {
 			ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
 			CODE_SIGN_STYLE = "Automatic";
@@ -81,53 +81,53 @@
 			TARGETED_DEVICE_FAMILY = "1,2";
 			SWIFT_OPTIMIZATION_LEVEL = "-O";
 		};
-			name = Release;
+			name = "Release";
 		};
 		1A18E26C282A44F9A708F7BB = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "4A104F7E766649FB9E96BD3A";
 		};
 		1C3D781D803C4B1BB0F269AE = {
-			isa = PBXGroup;
+			isa = "PBXGroup";
 			children = (
 			"0726BF575F054CDBAD6A55E3",
 			"29A477896E284D8EBA5E0B76",
 			"C52DA7194FF2481A941B5A85",
 		);
-			name = ViewModels;
-			path = ViewModels;
+			name = "ViewModels";
+			path = "ViewModels";
 			sourceTree = <group>;
 		};
 		1DF9E60D1A574B779AE3A204 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "GitHubService.swift";
 			sourceTree = <group>;
 		};
 		29A477896E284D8EBA5E0B76 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "GitHubConfigViewModel.swift";
 			sourceTree = <group>;
 		};
 		34B2DF90591947AAA0E6712E = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "87896A5047914614B98D341C";
 		};
 		34C53B7F24FF49888546F26C = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "DateFormatter+Extensions.swift";
 			sourceTree = <group>;
 		};
 		355E20E404874B9194E3806C = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "ContentPathBuilder.swift";
 			sourceTree = <group>;
 		};
 		35B2C0631B3544B18007F5CE = {
-			isa = PBXGroup;
+			isa = "PBXGroup";
 			children = (
 			"7E474DC6DC2E4D41912C483D",
 			"B20C10E81EA24CD4AA195A7B",
@@ -135,19 +135,19 @@
 			sourceTree = <group>;
 		};
 		3FBC030B0A734958B8B07E20 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "ImageCDNRule.swift";
 			sourceTree = <group>;
 		};
 		464A3EBB2E2A47E0852A82B6 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "GitHubConfigSheet.swift";
 			sourceTree = <group>;
 		};
 		465216B16BB945D8A0FDDF72 = {
-			isa = PBXProject;
+			isa = "PBXProject";
 			attributes = {
 			LastSwiftUpdateCheck = "1500";
 			LastUpgradeCheck = "1500";
@@ -160,7 +160,7 @@
 		};
 			buildConfigurationList = "BE0FFD7D91704DDFBE34D356";
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = "en";
 			hasScannedForEncodings = 0;
 			knownRegions = (
 			"en",
@@ -175,11 +175,11 @@
 		);
 		};
 		47E2B279D28545F4BF2FDF5C = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "C52DA7194FF2481A941B5A85";
 		};
 		48CE10C2130946D297F6DB3C = {
-			isa = PBXGroup;
+			isa = "PBXGroup";
 			children = (
 			"6B669932C9C847E289A16504",
 		);
@@ -188,111 +188,111 @@
 			sourceTree = <group>;
 		};
 		4938624D3657422494FB6479 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "ImageUploadService.swift";
 			sourceTree = <group>;
 		};
 		49E85ED36BEB41F6A123480A = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "FrontMatterBuilder.swift";
 			sourceTree = <group>;
 		};
 		4A104F7E766649FB9E96BD3A = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "GitHubConfig.swift";
 			sourceTree = <group>;
 		};
 		4DC272E058EE4BA5B9B295F0 = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "3FBC030B0A734958B8B07E20";
 		};
 		5099151E6A154F14A79C5623 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "ContentView.swift";
 			sourceTree = <group>;
 		};
 		C43482BD24AC4C98BA91568B = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "PhotoPickerSheet.swift";
 			sourceTree = <group>;
 		};
 		520013C12F45442FB3F1DBFE = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "MetadataFormView.swift";
 			sourceTree = <group>;
 		};
 		50B4AC71500D4340878418F5 = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "C43482BD24AC4C98BA91568B";
 		};
 		538C9FAC1E3C444D83916AC2 = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "C3706FD98AA4455AB76ED48D";
 		};
 		59F79447B14146AFBF92B3A6 = {
-			isa = XCBuildConfiguration;
+			isa = "XCBuildConfiguration";
 			buildSettings = {
 			CODE_SIGN_STYLE = "Automatic";
 			DEVELOPMENT_TEAM = "";
 		};
-			name = Release;
+			name = "Release";
 		};
 		B2670EFA63884AF29CFAE3F9 = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "5B60618763574678960FC3B0";
 		};
 		C1618F99C95F4CC1AAED2AFF = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "B21D5531E277421F83981F6E";
 		};
 		5B3AA7772817462492969881 = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "49E85ED36BEB41F6A123480A";
 		};
 		5DC460D40691433CA30BAD13 = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "1626292E442E4DC9BD0CE1EB";
 		};
 		5E31B4B5FC434ECCA119A3FA = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "MetadataField.swift";
 			sourceTree = <group>;
 		};
 		697CE61019BD49FD8EBF5B49 = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "1DF9E60D1A574B779AE3A204";
 		};
 		6B669932C9C847E289A16504 = {
-			isa = PBXFileReference;
-			lastKnownFileType = folder.assetcatalog;
+			isa = "PBXFileReference";
+			lastKnownFileType = "folder.assetcatalog";
 			path = "PreviewAssets.xcassets";
 			sourceTree = <group>;
 		};
 		6F6FE6C92AFA43079F4372C3 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "MetadataStore.swift";
 			sourceTree = <group>;
 		};
 		70365700449D45488AA2558D = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "520013C12F45442FB3F1DBFE";
 		};
 		72665BD3FCC84228895867AE = {
-			isa = PBXGroup;
+			isa = "PBXGroup";
 			children = ();
-			name = Shared;
+			name = "Shared";
 			sourceTree = <group>;
 		};
 		7E474DC6DC2E4D41912C483D = {
-			isa = PBXGroup;
+			isa = "PBXGroup";
 			children = (
 			"824D16CA5CD645D4ADAA9A45",
 			"F0EC02C8FA5043F48816B314",
@@ -302,96 +302,96 @@
 			"AC775DEAD83342FE9898F89A",
 			"8E1A3AAED64E465B9A73940D",
 		);
-			path = SwiftMarkdownEditor;
+			path = "SwiftMarkdownEditor";
 			sourceTree = <group>;
 		};
 		818820B7530E4A8FBFBF00B3 = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "D8EEFEFEC3C848AB997741E3";
 		};
 		824D16CA5CD645D4ADAA9A45 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "SwiftMarkdownEditorApp.swift";
 			sourceTree = <group>;
 		};
 		837B5951EF594A8F99B51EEC = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "D0F75BA221264EB1B7BEBA53";
 		};
 		87896A5047914614B98D341C = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "UploadProgress.swift";
 			sourceTree = <group>;
 		};
 		8E1A3AAED64E465B9A73940D = {
-			isa = PBXGroup;
+			isa = "PBXGroup";
 			children = (
 			"D05325AD16D94E2B9305EC2C",
 			"CBF484A424F949ACB6974206",
 			"48CE10C2130946D297F6DB3C",
 		);
-			name = Resources;
-			path = Resources;
+			name = "Resources";
+			path = "Resources";
 			sourceTree = <group>;
 		};
 		8EF7D8318BBE43E4A9C1258D = {
-			isa = PBXFileReference;
-			explicitFileType = wrapper.application;
+			isa = "PBXFileReference";
+			explicitFileType = "wrapper.application";
 			includeInIndex = 0;
 			path = "SwiftMarkdownEditor.app";
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		93387ECAAB6443B8A3162C18 = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "5099151E6A154F14A79C5623";
 		};
 		9A450FFC1A1742ED90019225 = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "34C53B7F24FF49888546F26C";
 		};
 		9E0C0459F5FA4C20A97CE326 = {
-			isa = PBXGroup;
+			isa = "PBXGroup";
 			children = (
 			"49E85ED36BEB41F6A123480A",
 			"355E20E404874B9194E3806C",
 			"1DF9E60D1A574B779AE3A204",
 			"4938624D3657422494FB6479",
 		);
-			name = Services;
-			path = Services;
+			name = "Services";
+			path = "Services";
 			sourceTree = <group>;
 		};
 		A04A16E20A7C48EE87CF52EE = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "355E20E404874B9194E3806C";
 		};
 		A1EAF30214D4475F87A8246E = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "6F6FE6C92AFA43079F4372C3";
 		};
 		AC775DEAD83342FE9898F89A = {
-			isa = PBXGroup;
+			isa = "PBXGroup";
 			children = (
 			"5099151E6A154F14A79C5623",
 			"C5612DA879FB4605A9E58DFE",
 			"72665BD3FCC84228895867AE",
 		);
-			name = Views;
-			path = Views;
+			name = "Views";
+			path = "Views";
 			sourceTree = <group>;
 		};
 		B20C10E81EA24CD4AA195A7B = {
-			isa = PBXGroup;
+			isa = "PBXGroup";
 			children = (
 			"8EF7D8318BBE43E4A9C1258D",
 		);
-			name = Products;
+			name = "Products";
 			sourceTree = <group>;
 		};
 		BD1FA2707DC94EA88C1ECBE0 = {
-			isa = XCBuildConfiguration;
+			isa = "XCBuildConfiguration";
 			buildSettings = {
 			ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
 			CODE_SIGN_STYLE = "Automatic";
@@ -411,35 +411,35 @@
 			ENABLE_TESTABILITY = "YES";
 			SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 		};
-			name = Debug;
+			name = "Debug";
 		};
 		BE0FFD7D91704DDFBE34D356 = {
-			isa = XCConfigurationList;
+			isa = "XCConfigurationList";
 			buildConfigurations = (
 			"E3997656A553479F9A937F76",
 			"59F79447B14146AFBF92B3A6",
 		);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release";
 		};
 		C3706FD98AA4455AB76ED48D = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "ImageUploadSheet.swift";
 			sourceTree = <group>;
 		};
 		C497E4E6E5B4487F89D74D94 = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "D19D3F48C475492E9738E457";
 		};
 		C52DA7194FF2481A941B5A85 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "ImageUploadViewModel.swift";
 			sourceTree = <group>;
 		};
 		C5612DA879FB4605A9E58DFE = {
-			isa = PBXGroup;
+			isa = "PBXGroup";
 			children = (
 			"C43482BD24AC4C98BA91568B",
 			"D19D3F48C475492E9738E457",
@@ -447,16 +447,16 @@
 			"464A3EBB2E2A47E0852A82B6",
 			"C3706FD98AA4455AB76ED48D",
 		);
-			name = Editor;
-			path = Editor;
+			name = "Editor";
+			path = "Editor";
 			sourceTree = <group>;
 		};
 		C9256C4EB7484110B688CC51 = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "0726BF575F054CDBAD6A55E3";
 		};
 		C926614486804447925EDBB7 = {
-			isa = PBXGroup;
+			isa = "PBXGroup";
 			children = (
 			"5B60618763574678960FC3B0",
 			"B21D5531E277421F83981F6E",
@@ -464,49 +464,49 @@
 			"1626292E442E4DC9BD0CE1EB",
 			"34C53B7F24FF49888546F26C",
 		);
-			name = Utilities;
-			path = Utilities;
+			name = "Utilities";
+			path = "Utilities";
 			sourceTree = <group>;
 		};
 		CA93763CDA5F449C8ED744BE = {
-			isa = XCConfigurationList;
+			isa = "XCConfigurationList";
 			buildConfigurations = (
 			"BD1FA2707DC94EA88C1ECBE0",
 			"19C3BD2F059D42158DFA3E31",
 		);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release";
 		};
 		CBF484A424F949ACB6974206 = {
-			isa = PBXFileReference;
-			lastKnownFileType = folder.assetcatalog;
+			isa = "PBXFileReference";
+			lastKnownFileType = "folder.assetcatalog";
 			path = "Assets.xcassets";
 			sourceTree = <group>;
 		};
 		D05325AD16D94E2B9305EC2C = {
-			isa = PBXFileReference;
-			lastKnownFileType = text.plist.xml;
+			isa = "PBXFileReference";
+			lastKnownFileType = "text.plist.xml";
 			path = "Info.plist";
 			sourceTree = <group>;
 		};
 		D0F75BA221264EB1B7BEBA53 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "SecureStore.swift";
 			sourceTree = <group>;
 		};
 		D19D3F48C475492E9738E457 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "EditorScreen.swift";
 			sourceTree = <group>;
 		};
 		D3F2A07CDBE141F185FFA527 = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "CBF484A424F949ACB6974206";
 		};
 		D8AD0A435180433B8BB13847 = {
-			isa = PBXResourcesBuildPhase;
+			isa = "PBXResourcesBuildPhase";
 			buildActionMask = 2147483647;
 			files = (
 			"D3F2A07CDBE141F185FFA527",
@@ -515,13 +515,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D8EEFEFEC3C848AB997741E3 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "ContentType.swift";
 			sourceTree = <group>;
 		};
 		DABD9D20C7B74E5DB6446E34 = {
-			isa = PBXNativeTarget;
+			isa = "PBXNativeTarget";
 			buildConfigurationList = "CA93763CDA5F449C8ED744BE";
 			buildPhases = (
 			"15EBAEBEF6FE4AC8B0C4034F",
@@ -530,29 +530,29 @@
 		);
 			buildRules = ();
 			dependencies = ();
-			name = SwiftMarkdownEditor;
+			name = "SwiftMarkdownEditor";
 			productName = "SwiftMarkdownEditor";
 			productReference = "8EF7D8318BBE43E4A9C1258D";
 			productType = "com.apple.product-type.application";
 		};
 		DD59D7D8652741C0A15E9C24 = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "4938624D3657422494FB6479";
 		};
 		DDA72AE6C9094D709DE1644D = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "6B669932C9C847E289A16504";
 		};
 		E3997656A553479F9A937F76 = {
-			isa = XCBuildConfiguration;
+			isa = "XCBuildConfiguration";
 			buildSettings = {
 			CODE_SIGN_STYLE = "Automatic";
 			DEVELOPMENT_TEAM = "";
 		};
-			name = Debug;
+			name = "Debug";
 		};
 		F0EC02C8FA5043F48816B314 = {
-			isa = PBXGroup;
+			isa = "PBXGroup";
 			children = (
 			"D8EEFEFEC3C848AB997741E3",
 			"5E31B4B5FC434ECCA119A3FA",
@@ -562,40 +562,40 @@
 			"F49EC73E82784756B57CE2AC",
 			"87896A5047914614B98D341C",
 		);
-			name = Models;
-			path = Models;
+			name = "Models";
+			path = "Models";
 			sourceTree = <group>;
 		};
 		F274B2909FE24BC18DD7CCAC = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "29A477896E284D8EBA5E0B76";
 		};
 		F49EC73E82784756B57CE2AC = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
 			path = "GitHubFile.swift";
 			sourceTree = <group>;
 		};
 		F4F9515227E142B0A397D9CD = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "5E31B4B5FC434ECCA119A3FA";
 		};
 		F8F99414C7554228A6C01C8C = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "824D16CA5CD645D4ADAA9A45";
 		};
 		F977020EE09745D6B67E1DD9 = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "464A3EBB2E2A47E0852A82B6";
 		};
 		FCE5DF4DBC474B91BB620B1E = {
-			isa = PBXFrameworksBuildPhase;
+			isa = "PBXFrameworksBuildPhase";
 			buildActionMask = 2147483647;
 			files = ();
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FD5B291794EF45A8946C246A = {
-			isa = PBXBuildFile;
+			isa = "PBXBuildFile";
 			fileRef = "F49EC73E82784756B57CE2AC";
 		};
 	};

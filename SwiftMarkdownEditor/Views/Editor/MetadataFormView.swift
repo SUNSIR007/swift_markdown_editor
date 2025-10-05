@@ -23,7 +23,7 @@ struct MetadataFormView: View {
                 get: { viewModel.metadata.string(forKey: field.key) ?? "" },
                 set: { viewModel.updateMetadata(key: field.key, value: .string($0)) }
             ))
-            .textFieldStyle(.roundedBorder)
+            .platformRoundedTextField()
         case .multiline:
             TextEditor(text: Binding(
                 get: { viewModel.metadata.string(forKey: field.key) ?? "" },
@@ -31,7 +31,7 @@ struct MetadataFormView: View {
             ))
             .frame(height: 120)
             .padding(6)
-            .background(Color(uiColor: .secondarySystemBackground))
+            .background(Color.platformSecondaryBackground)
             .cornerRadius(8)
         case .tags:
             TextField(field.placeholder ?? "", text: Binding(
@@ -44,13 +44,21 @@ struct MetadataFormView: View {
                     viewModel.updateMetadata(key: field.key, value: .stringArray(tags))
                 }
             ))
-            .textFieldStyle(.roundedBorder)
+            .platformRoundedTextField()
         case .date:
+#if os(iOS)
             DatePicker("", selection: Binding(
                 get: { viewModel.metadata.date(forKey: field.key) ?? Date() },
                 set: { viewModel.updateMetadata(key: field.key, value: .date($0)) }
             ), displayedComponents: .date)
             .datePickerStyle(.graphical)
+#else
+            DatePicker("", selection: Binding(
+                get: { viewModel.metadata.date(forKey: field.key) ?? Date() },
+                set: { viewModel.updateMetadata(key: field.key, value: .date($0)) }
+            ), displayedComponents: .date)
+            .datePickerStyle(.automatic)
+#endif
         case .toggle:
             Toggle(isOn: Binding(
                 get: { viewModel.metadata.bool(forKey: field.key) ?? false },
@@ -60,12 +68,21 @@ struct MetadataFormView: View {
             }
             .labelsHidden()
         case .number:
+#if os(iOS)
             TextField(field.placeholder ?? "", value: Binding(
                 get: { viewModel.metadata.number(forKey: field.key) ?? 0 },
                 set: { viewModel.updateMetadata(key: field.key, value: .number($0)) }
             ), format: .number)
-            .textFieldStyle(.roundedBorder)
+            .platformRoundedTextField()
             .keyboardType(.decimalPad)
+#else
+            TextField(field.placeholder ?? "", value: Binding(
+                get: { viewModel.metadata.number(forKey: field.key) ?? 0 },
+                set: { viewModel.updateMetadata(key: field.key, value: .number($0)) }
+            ), format: .number)
+            .platformRoundedTextField()
+#endif
         }
+
     }
 }

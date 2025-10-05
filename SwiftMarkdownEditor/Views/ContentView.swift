@@ -1,5 +1,4 @@
 import SwiftUI
-import PhotosUI
 
 struct ContentView: View {
     @ObservedObject var editorViewModel: EditorViewModel
@@ -8,7 +7,7 @@ struct ContentView: View {
 
     @State private var showingConfigSheet = false
     @State private var showingImageSheet = false
-    @State private var selectedPhotosItems: [PhotosPickerItem] = []
+    @State private var showingPhotoPicker = false
 
     var body: some View {
         NavigationStack {
@@ -17,36 +16,41 @@ struct ContentView: View {
                          showImageUpload: { showingImageSheet = true })
                 .navigationTitle("Markdown Editor")
                 .toolbar {
-                    ToolbarItemGroup(placement: .navigationBarTrailing) {
-                        Button {
-                            showingConfigSheet = true
-                        } label: {
-                            Label("配置", systemImage: "gearshape")
-                        }
-
-                        PhotosPicker(selection: $selectedPhotosItems, matching: .images) {
-                            Label("图片", systemImage: "photo.on.rectangle")
-                        }
-                    }
-                }
-                .onChange(of: selectedPhotosItems) { newItems in
-                    guard !newItems.isEmpty else { return }
-                    showingImageSheet = true
-                    imageUploadViewModel.upload(items: newItems)
+#if os(iOS)
+                    ToolbarItem(placement: .navigationBarTrailing) { configButton }
+                    ToolbarItem(placement: .navigationBarTrailing) { photoButton }
+#else
+                    ToolbarItem { configButton }
+                    ToolbarItem { photoButton }
+#endif
                 }
         }
         .sheet(isPresented: $showingConfigSheet) {
             NavigationStack {
                 GitHubConfigSheet(viewModel: configViewModel)
             }
+#if os(iOS)
             .presentationDetents([.medium, .large])
+#endif
         }
-        .sheet(isPresented: $showingImageSheet, onDismiss: { selectedPhotosItems = [] }) {
+        .sheet(isPresented: $showingPhotoPicker) {
+            PhotoPickerSheet { assets in
+                showingPhotoPicker = false
+                guard !assets.isEmpty else { return }
+                showingImageSheet = true
+                imageUploadViewModel.upload(assets: assets)
+            }
+        }
+        .sheet(isPresented: $showingImageSheet, onDismiss: {
+            showingImageSheet = false
+        }) {
             NavigationStack {
                 ImageUploadSheet(viewModel: imageUploadViewModel,
                                  onDismiss: { showingImageSheet = false })
             }
+#if os(iOS)
             .presentationDetents([.medium, .large])
+#endif
         }
         .alert(item: Binding(get: {
             if let error = editorViewModel.lastErrorMessage {
@@ -65,6 +69,22 @@ struct ContentView: View {
             imageUploadViewModel.errorMessage = nil
         })) { payload in
             Alert(title: Text("错误"), message: Text(payload.message), dismissButton: .default(Text("好")))
+        }
+    }
+
+    private var configButton: some View {
+        Button {
+            showingConfigSheet = true
+        } label: {
+            Label("配置", systemImage: "gearshape")
+        }
+    }
+
+    private var photoButton: some View {
+        Button {
+            showingPhotoPicker = true
+        } label: {
+            Label("图片", systemImage: "photo.on.rectangle")
         }
     }
 }

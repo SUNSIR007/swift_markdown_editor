@@ -1,6 +1,4 @@
 import Foundation
-import PhotosUI
-
 @MainActor
 final class ImageUploadViewModel: ObservableObject {
     @Published var uploadProgress: UploadProgress = .idle
@@ -14,8 +12,8 @@ final class ImageUploadViewModel: ObservableObject {
         self.imageService = imageService
     }
 
-    func upload(items: [PhotosPickerItem]) {
-        guard !items.isEmpty else { return }
+    func upload(assets: [ImageUploadAsset]) {
+        guard !assets.isEmpty else { return }
         isUploading = true
         uploadProgress = UploadProgress(state: .preparing, currentFileName: "")
         uploadedResults.removeAll()
@@ -23,12 +21,8 @@ final class ImageUploadViewModel: ObservableObject {
 
         Task {
             do {
-                for item in items {
-                    guard let data = try await item.loadTransferable(type: Data.self) else { continue }
-                    let identifier = item.itemIdentifier ?? UUID().uuidString
-                    let utType = item.supportedContentTypes.first ?? .jpeg
-                    let asset = ImageUploadAsset(fileName: identifier, data: data, utType: utType)
-                    uploadProgress = UploadProgress(state: .processing("上传 \(identifier)"), currentFileName: identifier)
+                for asset in assets {
+                    uploadProgress = UploadProgress(state: .processing("上传 \(asset.fileName)"), currentFileName: asset.fileName)
                     let result = try await imageService.upload(asset)
                     uploadedResults.append(result)
                 }

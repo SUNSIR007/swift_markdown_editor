@@ -16,7 +16,7 @@ struct EditorScreen: View {
             }
             .padding()
         }
-        .background(Color(uiColor: .systemGroupedBackground))
+        .background(Color.platformGroupedBackground)
     }
 
     private var header: some View {
@@ -68,7 +68,7 @@ struct EditorScreen: View {
             ))
             .frame(minHeight: 240)
             .padding(8)
-            .background(Color(uiColor: .secondarySystemBackground))
+            .background(Color.platformSecondaryBackground)
             .cornerRadius(10)
         }
         .padding()
@@ -86,7 +86,7 @@ struct EditorScreen: View {
                     .padding()
             }
             .frame(minHeight: 200)
-            .background(Color(uiColor: .secondarySystemBackground))
+            .background(Color.platformSecondaryBackground)
             .cornerRadius(10)
         }
         .padding()
@@ -143,7 +143,7 @@ private struct StatusBadge: View {
             }
             .padding(.vertical, 6)
             .padding(.horizontal, 12)
-            .background(Color(uiColor: .secondarySystemBackground))
+            .background(Color.platformSecondaryBackground)
             .cornerRadius(20)
         }
     }
